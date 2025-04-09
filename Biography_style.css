@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    border: 1px solid black;
+    width: 800px;
+}
+
+.header {
+    border-bottom: 1px solid black;
+    padding: 10px 10px;
+}
+
+.content {
+    display: flex;
+}
+
+.left, .right {
+    border-right: 1px solid black;
+}
+
+.left {
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+
+.right {
+    padding: 10px;
+    width: 70%;
+    border-right: none;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
