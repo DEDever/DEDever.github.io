@@ -1,12 +1,18 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    background-image: linear-gradient(to bottom right, yellow , red);
 }
 
 .main-container {
-    width: 1000px;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
     box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .content-area {
@@ -19,6 +25,7 @@ body {
 }
 
 .header-title {
+    width: 61%;
     padding: 10px;
     border-bottom: 1px solid black;
     font-weight: bold;
@@ -28,20 +35,18 @@ body {
     flex: 1;
     padding: 10px;
     text-align: center;
-    border-left: 1px solid black;
+    border-right: 1px solid black;
     border-bottom: 1px solid black;
     background-color: #f4f4f4;
 }
 
 .section {
     display: flex;
-    border-bottom: 1px solid black;
 }
 
 .text-block {
     flex: 3;
     padding: 10px;
-    border-right: 1px solid black;
 }
 
 .details-link {
@@ -54,35 +59,41 @@ body {
 
 .hobbies-row {
     display: flex;
-    border-bottom: 1px solid black;
 }
 
 .hobby {
     flex: 1;
     padding: 10px;
-    border-right: 1px solid black;
     text-align: center;
 }
 
-.hobby:last-child {
-    border-right: none;
-}
 
 .footer-ads {
     display: flex;
     border-top: 1px solid black;
+    width: 80%;
 }
 
 .footer-ad {
     padding: 10px;
-    text-align: center;
     border-right: 1px solid black;
+    border-bottom: 1px solid black;
     background-color: #eaeaea;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.footer-ad:last-child {
-    border-right: none;
+.footer-ad img {
+    max-width: 100%;
+    height: auto;
 }
+
+.footer-ad:first-child {
+    border-left: 1px solid black;
+}
+
 
 .footer-ad.short {
     width: 25%;
