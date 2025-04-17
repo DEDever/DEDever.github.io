@@ -1,11 +1,20 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    background-image: linear-gradient(to right, yellow , red);
 }
 
 .container {
     border: 1px solid black;
     width: 800px;
+}
+
+
+.top_bar{
+    padding: 10px 10px;
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid black;
 }
 
 .header {
@@ -25,6 +34,10 @@ body {
     width: 30%;
     display: block;
     margin: auto;
+}
+
+.left img{
+    padding: 15px;
 }
 
 .right {
