@@ -1,48 +1,63 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-image: linear-gradient(to right, yellow , red);
+    background-image: linear-gradient(to right, yellow, red);
 }
 
 .main-container {
-    width: 1000px;
+    max-width: 1000px;
+    margin: auto;
     border: 1px solid black;
-    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 10px;
 }
 
-.top_bar{
-    padding: 10px 10px;
+.top_bar {
     display: flex;
     gap: 10px;
+    padding: 10px;
     border-bottom: 1px solid black;
 }
 
 .header-title {
     padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
     border-bottom: 1px solid black;
 }
 
 .content-area {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
 }
 
 .section {
-    display: flex;
-    flex-direction:row;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 10px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
 }
 
-.section img{
-    padding: 10px;
-}
-
-.text-block{
-    padding: 10px;
+.Image img {
     width: 100%;
-    border-bottom: 1px solid black;
+    height: auto;
+    display: block;
 }
 
-.Image{
-    border-bottom: 1px solid black;
+.text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+p {
+    margin-top: 5px;
 }

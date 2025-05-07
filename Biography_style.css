@@ -5,6 +5,9 @@ body {
 }
 
 .container {
+    margin: auto;
+    display: grid;
+    grid-template-rows: auto 1fr;
     border: 1px solid black;
     width: 800px;
 }
