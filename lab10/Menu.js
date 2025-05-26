@@ -35,7 +35,7 @@ function doAction(action) {
       break;
   }
 
-  hideMenu(); // ховати меню після вибору
+  hideMenu(); 
 }
 
 function changeFontSize(delta) {

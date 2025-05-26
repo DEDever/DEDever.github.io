@@ -48,6 +48,10 @@ body {
     padding: 10px;
 }
 
+.text-block-lab11{
+    margin: auto;
+}
+
 .details-link {
     flex: 1;
     padding: 10px;
@@ -56,11 +60,11 @@ body {
     float: right;
 }
 
-.hobbies-row {
+.Tripple {
     display: flex;
 }
 
-.hobby {
+.oneOf {
     flex: 1;
     padding: 10px;
     text-align: center;
