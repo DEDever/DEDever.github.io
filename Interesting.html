@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <title>Цікаве</title>
     <link rel="stylesheet" href="interesting_style.css">
+    
+    <link rel="stylesheet" href="Menu.css">
+    <script src="Menu.js"></script>
 </head>
-<body>
+<body onclick="hideMenu()" oncontextmenu="showMenu(event); return false;">
     <div class="main-container">
 
         <header class="top_bar">
@@ -41,6 +44,13 @@
 <!-- Elfsight Background Music | Untitled Background Music -->
 <script src="https://static.elfsight.com/platform/platform.js" async></script>
 <div class="elfsight-app-b5bd1f33-b231-4713-b93f-6be8e7d2ed5b" data-elfsight-app-lazy></div>
+
+    <div id="custommenu">
+    <div onclick="doAction('copy')">Скопіювати вміст документа</div>
+    <div onclick="doAction('close')">Закрити вікно</div>
+    <div onclick="doAction('fontIncrease')">Збільшити шрифт</div>
+    <div onclick="doAction('fontDecrease')">Зменшити шрифт</div>
+    <div onclick="doAction('changeBkg')">Змінити фон</div>
 
     </div>
 </body>

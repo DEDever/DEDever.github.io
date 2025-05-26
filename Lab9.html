@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>JavaScript Завдання</title>
+    
+    <link rel="stylesheet" href="Menu.css">
+    <script src="Menu.js"></script>
 </head>
-<body>
+<body onclick="hideMenu()" oncontextmenu="showMenu(event); return false;">
     <script src="Lab9.js"></script>
 
     <h2>Довжина рядка</h2>
@@ -72,5 +75,13 @@
     <button onclick="calculateHypotenuse()">Обчислити</button>
     <p id="hypotenuseResult"></p>
 
+
+    <div id="custommenu">
+    <div onclick="doAction('copy')">Скопіювати вміст документа</div>
+    <div onclick="doAction('close')">Закрити вікно</div>
+    <div onclick="doAction('fontIncrease')">Збільшити шрифт</div>
+    <div onclick="doAction('fontDecrease')">Зменшити шрифт</div>
+    <div onclick="doAction('changeBkg')">Змінити фон</div>
+</div>
 </body>
 </html>

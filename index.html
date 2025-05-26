@@ -5,10 +5,12 @@
     <title>Заголовок сторінки</title>
     <link rel="stylesheet" href="index_style.css">
     <link rel="stylesheet" href="Menu.css">
+    <script src="Menu.js"></script>
 </head>
 <body onclick="hideMenu()" oncontextmenu="showMenu(event); return false;">
 
-<script src="Menu.js"></script>
+<script src="ImageHover.js"></script>
+<script src="NumberOnly.js"></script>
 
 <div class="main-container">
 
@@ -57,7 +59,11 @@
             </div>
 
             <div class="section">
-                <div class="text-block">Лабораторна №9<a href="Lab8.html" class="details-link">Детальніше >></a></div>
+                <div class="text-block">Лабораторна №9<a href="Lab9.html" class="details-link">Детальніше >></a></div>
+            </div>
+
+            <div class="section">
+                <div class="text-block"><label>Перевірка вводу <input type="text" id="digitOnly"></label></div>
             </div>
 
             <div class="section">
@@ -65,11 +71,13 @@
 <script src="https://static.elfsight.com/platform/platform.js" async></script>
 <div class="elfsight-app-eac23bac-ee70-43a7-ad77-ea9cd41bb750" data-elfsight-app-lazy></div>
             </div>
+
         </div>
 
         <div class="right-ad-block">
-            <img src="https://study.com/cimages/multimages/16/burgerad15179945781952220614.png">
+            <img onmouseover="MouseOver(this)" onmouseout="MouseOut(this)" id= "rightAd" src="https://study.com/cimages/multimages/16/burgerad15179945781952220614.png">
         </div>
+
 <!-- Elfsight Countdown Timer | Untitled Countdown Timer -->
 <script src="https://static.elfsight.com/platform/platform.js" async></script>
 <div class="elfsight-app-9e6ef18e-39fd-42af-886a-eff576b9bba1" data-elfsight-app-lazy></div>
