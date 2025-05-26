@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Завдання</title>
+</head>
+<body>
+    <script src="Lab9.js"></script>
+
+    <h2>Довжина рядка</h2>
+    <label>Введіть рядок:</label>
+    <input type="text" id="inputString">
+    <button onclick="showLength()">Показати довжину</button>
+    <p id="lengthResult"></p>
+
+    <h2>Електронна пошта</h2>
+    <label>Введіть пошту:</label>
+    <input type="text" id="emailInput">
+    <button onclick="checkEmail()">Перевірити пошту</button>
+    <p id="emailResult"></p>
+
+    <h2>Змінна регістрів</h2>
+    <label>Введіть текст:</label>
+    <input type="text" id="caseInput">
+    <button onclick="convertCase()">Змінити регістри</button>
+    <p id="caseResult"></p>
+
+    <h2>Пошук підрядка</h2>
+    <label>Основний рядок:</label>
+    <input type="text" id="mainStr">
+    <br>
+    <label>Підрядок для пошуку:</label>
+    <input type="text" id="subStr">
+    <button onclick="findSubstring()">Знайти позицію</button>
+    <p id="SubstringResult"></p>
+
+    <h2>Поточна дата</h2>
+    <p id="curentDateResult"></p>
+
+    <h2>Дата мого народження</h2>
+    <p id="birthdayDate"></p>
+
+
+    <h2>10, 12, 25 та 38 років тому</h2>
+    <p id="yearPast1"></p>
+    <p id="yearPast2"></p>
+    <p id="yearPast3"></p>
+    <p id="yearPast4"></p>
+
+    <h2>Через три роки</h2>
+    <p id="yearFuture"></p>
+
+    <h3>Інтервал між часами</h3>
+    <label>Години 1: <input type="number" id="hour1"></label>
+    <label>Хвилини 1: <input type="number" id="min1"></label><br>
+    <label>Години 2: <input type="number" id="hour2"></label>
+    <label>Хвилини 2: <input type="number" id="min2"></label><br>
+    <button onclick="calculateTimeDifference()">Обчислити інтервал</button>
+    <p id="timeDiffResult"></p>
+
+    <h3>Перевірка на число</h3>
+    <input type="text" id="checkNumberField">
+    <button onclick="checkIfNumber()">Перевірити</button>
+    <p id="numberCheckResult"></p>
+
+    <h3>Представлення числа</h3>
+    <button onclick="showNumberInBases()">Показати представлення</button>
+
+    <h3>Обчислення гіпотенузи</h3>
+    <label>Катет A: <input type="number" id="cathetusA"></label>
+    <label>Катет B: <input type="number" id="cathetusB"></label>
+    <button onclick="calculateHypotenuse()">Обчислити</button>
+    <p id="hypotenuseResult"></p>
+
+</body>
+</html>

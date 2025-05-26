@@ -1,0 +1,22 @@
+#custommenu {
+  position: absolute;
+  width: 250px;
+  background-color: #f0f0f0;
+  border: 1px solid #999;
+  visibility: hidden;
+  z-index: 10000;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  font-family: sans-serif;
+}
+
+#custommenu div {
+  padding: 8px 12px;
+  font-size: 14px;
+  color: navy;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+#custommenu div:hover {
+  background-color: #c0c0c0;
+}
