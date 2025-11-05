@@ -14,7 +14,6 @@
     </form>
 
     <?php
-    // Виведення інформації про розробника
     echo "<hr>";
     echo "<p><b>Розробник:</b> Студент групи СП-41, Іванков Артем Русланович</p>";
     echo "<p><b>Дата створення документа:</b> 08.10.2025</p>";
@@ -23,12 +22,11 @@
 
     if (isset($_POST['city'])) {
         $city = trim($_POST['city']);
-        $firstLetter = mb_strtoupper(mb_substr($city, 0, 1)); // перша літера (у верхньому регістрі)
+        $firstLetter = mb_strtoupper(mb_substr($city, 0, 1)); 
         echo "<h4>Ви ввели місто: $city</h4>";
 
         echo "<h3>Класичний синтаксис switch-case</h3>";
 
-        // === КЛАСИЧНИЙ СИНТАКСИС SWITCH ===
         switch ($firstLetter) {
             case 'К':
                 echo "Можливі міста: Київ, Касабланка → <b>Україна або Марокко</b>";
@@ -63,7 +61,6 @@
 
         echo "<hr><h3>Альтернативний синтаксис switch-case</h3>";
 
-        // === АЛЬТЕРНАТИВНИЙ СИНТАКСИС SWITCH ===
         switch ($firstLetter):
             case 'К':
                 echo "Можливі міста: Київ, Касабланка → <b>Україна або Марокко</b>";
